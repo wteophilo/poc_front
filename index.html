@@ -7,14 +7,23 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   </head>
   <body>
-    <div ng-include="'view/menu.html'"></div>
+    <div ng-include='view/menu.html'></div>
 
-    <div ng-view></div>
+    <div id = "view " ng-view></div>
+
     <div ng-include="'view/footer.html'"></div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js">
-    <script src = "js/app.js"></script>
+
+
+
+    <script src ="js/app.js"></script>
+    <script src="js/config/routeConfig.js"></script>
+    <script src="js/controllers/DoadorController.js"></script>
+    <script src="js/controllers/AgendaController.js"></script>
+    <script src="js/controllers/HomeController.js"></script>
   </body>
 </html>
