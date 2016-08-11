@@ -25,7 +25,6 @@
     "postinstall": "gulp heroku:production"
   },
   "engines": {
-    "node": "4.1.1",
-    "npm": "1.2.18"
+    "node": "4.1.1"
   }
 }
