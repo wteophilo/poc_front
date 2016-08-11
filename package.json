@@ -2,6 +2,11 @@
 "name": "poc_front",
 "description": "poc_front",
 "version": "1.0.0",
+"private": true,
+"repository":{
+  "type": "git",
+  "url": "git://github.com/wteophilo/poc_front_tcc.git"
+},
 "dependencies": {
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^1.0.1",
@@ -13,7 +18,7 @@
     "lodash": "^4.14.1",
     "through2": "^2.0.0"
   },
-  
+
   "engines": {
     "node": "4.4.7",
     "npm": "3.10.5"

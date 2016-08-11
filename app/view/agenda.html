@@ -8,10 +8,10 @@
     </div>
   </nav>
 
-<div id = "formDoador" class= "container" ng-controller = "AgendaController">
+<div id = "formDoador" class= "container">
   <h4>Doador: Preencha os dados</h4>
   <hr/>
-   <div ng-controller="doadorcontroller">
+   <div>
      <div class = "row">
         <form name="formDoador" class = "col s12">
           <div class="row">
@@ -54,7 +54,7 @@
 <div class= "container">
   <h4>Laboratório: Preencha os dados</h4>
   <hr/>
-   <div ng-controller="">
+   <div>
      <div class = "row">
         <form name="formLab" class = "col s12">
           <div class="row">
@@ -62,11 +62,19 @@
               <input type="text" id = "nome_lab" placeholder="Adicione o laboratório" ng-model="laboratorio.nome" class="validate"/>
             </div>
           </div>
+
           <div class="row">
             <div class="input-field col s12">
               <input type="text" id = "endereco_laboratorio" placeholder="Adicione o endereço" ng-model="laboratorio.endereco" class="validate"/>
             </div>
           </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <div id="googleMap" style="width:500px;height:380px;"></div>
+            </div>
+          </div>
+
 
         </form>
       </div>
@@ -76,5 +84,5 @@
 <div class= "container">
   <h4>Data:</h4>
   <hr/>
-  <input type="date" class="datepicker">
+  <input type="date" class="datepicker picker__input">
 </div>
