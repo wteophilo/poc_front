@@ -5,16 +5,18 @@ angular.module("app").config(function($routeProvider){
      controller     : 'homecontroller',
   });
 
+
+  $routeProvider.when('/doador', {
+     templateUrl : 'view/doador/cadastro.html',
+     controller     : 'doadorcontroller',
+  });
+
+
   $routeProvider.when('/agendar', {
      templateUrl : 'view/agenda.html',
      controller     : 'agendacontroller',
   });
 
-
-    $routeProvider.when('/doador', {
-       templateUrl : 'view/doador.html',
-       controller     : 'doadorcontroller',
-    });
 
   $routeProvider.otherwise ({ redirectTo: '/' });
  });
