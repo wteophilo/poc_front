@@ -11,7 +11,6 @@ angular.module("app").config(function($routeProvider){
      controller     : 'doadorcontroller',
   });
 
-
   $routeProvider.when('/agendar', {
      templateUrl : 'view/agenda.html',
      controller     : 'agendacontroller',
