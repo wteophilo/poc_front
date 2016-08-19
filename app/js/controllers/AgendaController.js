@@ -15,7 +15,7 @@ angular.module('app').controller('agendacontroller',function($scope,$http,$rootS
       $http.post("http://localhost:8080/agenda/",agenda).success(function(data){
         $scope.formAgenda.setPristine();
         $scope.message = "Agenda realizada com sucesso";
-        delete $scope.doador;
+        delete $scope.agenda;
       }).error(function(data,status){
         $scope.message = "Ocorreu um problema ao criar o doador "+ data;
       });
