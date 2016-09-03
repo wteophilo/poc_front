@@ -10,7 +10,7 @@
 
   "scripts": {
     "build": "gulp",
-    "start": "node app.js"
+    "start": "gulp connect"
   },
 
   "dependencies": {
