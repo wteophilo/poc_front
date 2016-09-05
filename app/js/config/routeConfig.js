@@ -1,19 +1,19 @@
 angular.module("app").config(function($routeProvider){
 
   $routeProvider.when('/', {
-     templateUrl : 'view/home.html',
-     controller     : 'homecontroller',
+     templateUrl: 'view/home.html',
+     controller: 'homecontroller',
   });
 
 
   $routeProvider.when('/doador', {
-     templateUrl : 'view/doador/cadastro.html',
-     controller     : 'doadorcontroller',
+     templateUrl: 'view/doador/cadastro.html',
+     controller: 'doadorcontroller',
   });
 
   $routeProvider.when('/agendar', {
-     templateUrl : 'view/agenda.html',
-     controller     : 'agendacontroller',
+     templateUrl: 'view/agenda.html',
+     controller: 'agendacontroller',
   });
 
 
