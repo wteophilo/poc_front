@@ -10,10 +10,10 @@ angular.module('app').controller('agendacontroller',function($scope,agendaAPI){
      });
     };
 
-    $scope.adicionarAgendar = function(agenda){
+    $scope.agendar = function(agenda){
       agendaAPI.saveAgenda(agenda).success(function(data){
-        $scope.formAgenda.setPristine();
         $scope.message = "Agenda realizada com sucesso";
+        $scope.formAgenda.$setPristine();
         delete $scope.agenda;
       }).error(function(data,status){
         $scope.message = "Ocorreu um problema ao criar o doador "+ data;

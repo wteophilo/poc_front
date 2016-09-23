@@ -12,7 +12,7 @@ angular.module("app").config(function($routeProvider){
   });
 
   $routeProvider.when('/agendar', {
-     templateUrl: 'view/agenda.html',
+     templateUrl: 'view/agenda/agendar.html',
      controller: 'agendacontroller',
   });
 

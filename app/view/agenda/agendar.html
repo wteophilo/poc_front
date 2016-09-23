@@ -15,8 +15,8 @@
               </div>
 
               <div class="form-group">
-                <label>Cpf:</label>
-                <input type="text"class="form-control"  id = "cpf_agenda.doador" placeholder="Adicione o cpf" ng-model="agenda.doador.cpf" ng-require = "true"/>
+                <label>Rg:</label>
+                <input type="text"class="form-control"  id = "rg_agenda.doador" placeholder="Adicione o rg" ng-model="agenda.doador.rg" ng-require = "true"/>
               </div>
 
               <div class="form-group">
@@ -49,15 +49,20 @@
       </div>
   </div>
 
-  <div class="container">
+<!--  <div class="container">
     <h2>Escolha uma data:</h2>
     <hr/>
     <input type="datetime-local" datetime="dd-MM-yyyy HH:mm:ss"  ng-model = "agenda.date"/>
+  </div>-->
+  <div class  ="container">
+    <h2>Escolha uma data:</h2>
+    <hr/>
+    <input  ng-model = "agenda.date"  type="datetime-local" min="{{minDate | date:'dd-MM-yyyy HH:mm:ss'}}" />
   </div>
 
   <div class="container">
     <div class="form-group">
-      <button type="submit" class="btn btn-default" ng-click="adicionarAgendar(agenda)"> Agendar </button>
+      <button type="submit" class="btn btn-default" ng-click="agendar(agenda)"> Agendar </button>
     </div>
   </form>
   </div>
