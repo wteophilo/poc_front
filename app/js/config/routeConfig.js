@@ -16,6 +16,20 @@ angular.module("app").config(function($routeProvider){
      controller: 'agendacontroller',
   });
 
+  $routeProvider.when('/listaLaboratorio', {
+     templateUrl: 'view/laboratorio/lista.html',
+     controller: 'laboratoriocontroller',
+  });
+
+  $routeProvider.when('/adicionaLaboratorio', {
+     templateUrl: 'view/laboratorio/cadastro.html',
+     controller: 'laboratoriocontroller',
+  });
+
+  $routeProvider.when('/erro500', {
+     templateUrl: 'view/erros/500.html',
+  });
+
 
   $routeProvider.otherwise ({ redirectTo: '/' });
  });

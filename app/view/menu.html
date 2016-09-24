@@ -15,6 +15,16 @@
             <li ng-class="{active: activetab == '/doador'}"><a href="#/doador">Doador</a></li>
             <li ng-class="{active: activetab == '/agendar'}"><a href="#/agendar">Agendar Doação</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Laboratório <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a ng-class="{active: activetab == '/adicionaLaboratorio'}" href="#/adicionaLaboratorio" >Novo</a></li>
+                <li><a ng-class="{active: activetab == '/listaLaboratorio'}" href="#/listaLaboratorio" >Associados</a></li>
+                <!--<li role="separator" class="divider"></li>-->
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
